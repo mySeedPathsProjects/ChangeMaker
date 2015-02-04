@@ -29,11 +29,18 @@ namespace ChangeMaker
         {
             //print original total amount before "amount" is brought to 0 with following code, with empty line space following
             Console.WriteLine("AMOUNT: " + "$" + amount);
+    //*****HE SHOWS A BETTER WAY TO PRINT CURRENCIES**************
             Console.WriteLine();
             
             //this is our object that will hold the data of how many coins of each type to return
             Change amountAsChange = new Change();
-           
+
+
+    //
+    //***** LOOK IN DUSTIN'S CODE ON HOW HE TURNED THIS INTO A FUNCTION *********
+    //
+
+
             //subtract as many quarters ($0.25) from "amount" until under 0.25 remaining, the repeat process with dimes, nickels, and pennies
             while (amount >= 100.00m)
             {
